@@ -2,7 +2,7 @@
 import streamlit as st
 import random
 
-palavras = ["perfume", "banana", "python", "computador", "praia", "tenis"]
+palavras = ["perfume", "banana", "python", "computador", "praia", "tenis"].lower().upper()
 
 def reset_game():
     st.session_state.palavra = random.choice(palavras)
